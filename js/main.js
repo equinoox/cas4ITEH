@@ -25,7 +25,7 @@ $('#dodajForm').submit(function(event){
     }).done(function(response){
         if(response === 'Uspesno ste kreirali novu prijavu'){
             console.log('Prijava je dodata!');
-            appendRow(serialized);
+            appendRow(formData);
         } else {
             console.log('Prijava nije dodata.')
         }
